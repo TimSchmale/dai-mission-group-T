@@ -16,3 +16,6 @@ networkx>=3.3
 jupyter>=1.1.0
 nbconvert>=7.16.0
 ipykernel>=6.29.0
+
+# holidyay calendar
+holidays>=0.27.0
