@@ -1,9 +1,6 @@
-# [Project Title]
+# [Forecasting Hourly Day-Ahead Electricity Prices in the German-Luxembourg Bidding Zone]
 
-![Notebook CI](https://github.com/<YOUR_GITHUB_USERNAME>/<YOUR_REPO_NAME>/actions/workflows/run-notebook.yml/badge.svg)
-
-> **Before submitting:** replace `<YOUR_GITHUB_USERNAME>/<YOUR_REPO_NAME>` in the badge URL above
-> with your actual GitHub owner and repository name.
+![Notebook CI](https://github.com/TimSchmale/dai-mission-group-T/actions/workflows/run-notebook.yml/badge.svg)
 
 ---
 
@@ -11,9 +8,8 @@
 
 | Name | Role |
 |------|------|
-| Firstname Lastname | Lead / Causal Inference |
-| Firstname Lastname | Supervised Learning |
-| Firstname Lastname *(optional)* | Unsupervised / Generative |
+| Lennart Oberkönig | Lead / All Components |
+| Tim Janis Schmale | All Components |
 
 > No student IDs in this file. Submit IDs separately via the course system (Moodle).
 
@@ -21,7 +17,7 @@
 
 ## Research Question
 
-*One sentence: what causal or predictive question are you answering, and with what data?*
+*How accurately can hourly day-ahead electricity prices in the German-Luxembourg bidding zone be forecasted using market fundamentals, renewable generation forecasts, load forecasts and calendar effects?*
 
 ---
 
@@ -29,9 +25,9 @@
 
 | Block | Method(s) |
 |-------|-----------|
-| Causal Inference | DoWhy — [backdoor / IV / propensity score] |
-| Supervised Learning | [e.g., Ridge regression, Random Forest, …] |
-| Unsupervised / Generative | [e.g., K-Means, VAE, Hierarchical clustering, …] |
+| Causal Inference | Causal graph / DAG (DoWhy) |
+| Supervised Learning | ARX-Model, Decision Tree, Random Forest & Neural Network  |
+| Unsupervised Learning | K-Means |
 
 ---
 
@@ -39,11 +35,9 @@
 
 | Dataset | Source / URL | Access method |
 |---------|-------------|---------------|
-| | | local file / API / sklearn built-in / runtime download / Sciebo link |
-
-> **Data size rule:** files < 100 MB may be committed directly. Files ≥ 100 MB must either
-> be downloaded programmatically in the notebook (API/URL) or linked via a Sciebo share
-> placed in this README — do NOT push large files to GitHub.
+| Forecasted Day-Ahead Generation | https://www.smard.de/home/downloadcenter/download-marktdaten/ | local .csv file |
+| Forecasted Day-Ahead Load | https://www.smard.de/home/downloadcenter/download-marktdaten/ | local .csv file |
+| Day-Ahead Electricity Price | https://www.smard.de/home/downloadcenter/download-marktdaten/ | local .csv file |
 
 ---
 
